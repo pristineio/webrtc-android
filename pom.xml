@@ -23,12 +23,20 @@
     <description>
         This project provides a developer consumable project for WebRTC native application development on Android.
     </description>
-    <url>https://code.google.com/p/webrtc/</url>
+    <url>https://github.com/pristineio/webrtc-android</url>
+
+    <licenses>
+        <license>
+            <name>BSD 3-Clause</name>
+            <url>http://www.webrtc.org/license-rights/license</url>
+        </license>
+    </licenses>
 
     <scm>
         <url>https://github.com/pristineio/webrtc-android</url>
         <connection>scm:git:git:git@github.com:pristineio/webrtc-android.git</connection>
         <developerConnection>scm:git:git@github.com:pristineio/webrtc-android.git</developerConnection>
+        <tag>HEAD</tag>
     </scm>
 
     <issueManagement>
@@ -41,6 +49,15 @@
     </properties>
 
     <build>
+        <resources>
+            <resource>
+                <directory>${project.basedir}</directory>
+                <includes>
+                    <include>README*</include>
+                    <include>LICENSE*</include>
+                </includes>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <artifactId>maven-release-plugin</artifactId>
@@ -50,13 +67,6 @@
             </plugin>
         </plugins>
     </build>
-
-    <licenses>
-        <license>
-            <name>BSD 3-Clause</name>
-            <url>http://www.webrtc.org/license-rights/license</url>
-        </license>
-    </licenses>
 
     <developers>
         <developer>
