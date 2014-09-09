@@ -5,7 +5,7 @@ Development
 =============
 Working with this project requires use of the [Maven Android SDK Deployer](https://github.com/mosabua/maven-android-sdk-deployer). Follow instructions there before proceeding with development. Once you have installed your Android SDK to your local maven repository you can compile and modify the project locally.
 
-The native dependency used is pre-compiled by us and [available on maven central](). Note that any library and application changes are bound by the libjingle_peerconnection.so file available. However, feel free to build your own .so file and drop it in this project.
+The native dependency used is pre-compiled by us and [available on maven central](https://oss.sonatype.org/content/groups/public/io/pristine/libjingle_peerconnection_so/7113/). Note that any library and application changes are bound by the libjingle_peerconnection.so file available. However, feel free to build your own .so file and drop it in this project.
 
 
 Modifications
