@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>7</version>
+    </parent>
+
+    <modules>
+        <module>libjingle_peerconnection</module>
+        <module>apprtc</module>
+    </modules>
+
+    <groupId>io.pristine</groupId>
+    <artifactId>webrtc-android</artifactId>
+    <version>7113</version>
+    <packaging>pom</packaging>
+    <name>WebRTC Android</name>
+    <description>
+        This project provides a developer consumable project for WebRTC native application development on Android.
+    </description>
+    <url>https://code.google.com/p/webrtc/</url>
+
+    <scm>
+        <url>https://github.com/pristineio/webrtc-android</url>
+        <connection>scm:git:git:git@github.com:pristineio/webrtc-android.git</connection>
+        <developerConnection>scm:git:git@github.com:pristineio/webrtc-android.git</developerConnection>
+    </scm>
+
+    <issueManagement>
+        <system>WebRTC Google Code Issues</system>
+        <url>https://code.google.com/p/webrtc/issues/list</url>
+    </issueManagement>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-release-plugin</artifactId>
+                <configuration>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <licenses>
+        <license>
+            <name>BSD 3-Clause</name>
+            <url>http://www.webrtc.org/license-rights/license</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Anil Kumar</name>
+            <email>an1kumar@gmail.com</email>
+        </developer>
+        <developer>
+            <name>Ben Strong</name>
+            <email>bstrong@gmail.com</email>
+        </developer>
+        <developer>
+            <name>Bridger Maxwell</name>
+            <email>bridgeyman@gmail.com</email>
+        </developer>
+        <developer>
+            <name>Christophe Dumez</name>
+            <email>ch.dumez@samsung.com</email>
+        </developer>
+        <developer>
+            <name>Eric Rescorla, RTFM Inc.</name>
+        </developer>
+        <developer>
+            <name>Jie Mao</name>
+            <email>maojie0924@gmail.com</email>
+        </developer>
+        <developer>
+            <name>Luke Weber</name>
+        </developer>
+        <developer>
+            <name>Martin Storsjo</name>
+            <email>martin@martin.st</email>
+        </developer>
+        <developer>
+            <name>Pali Rohar</name>
+        </developer>
+        <developer>
+            <name>Paul Kapustin</name>
+            <email>pkapustin@gmail.com</email>
+        </developer>
+        <developer>
+            <name>Rafael Lopez Diez</name>
+            <email>rafalopezdiez@gmail.com</email>
+        </developer>
+        <developer>
+            <name>Robert Nagy</name>
+        </developer>
+        <developer>
+            <name>Silviu Caragea</name>
+            <email>silviu.cpp@gmail.com</email>
+        </developer>
+        <developer>
+            <name>Vicken Simonian</name>
+            <email>vsimon@gmail.com</email>
+        </developer>
+        <developer>
+            <name>Victor Costan</name>
+            <email>costan@gmail.com</email>
+        </developer>
+    </developers>
+</project>
